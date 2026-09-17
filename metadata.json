@@ -1,0 +1,6 @@
+{
+  "name": "Buku Saku STARKES",
+  "description": "Aplikasi buku saku akreditasi rumah sakit dengan kategorisasi otomatis, pencarian pintar berbasis pengenalan objek, dan sinkronisasi kolaboratif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
