@@ -22,8 +22,12 @@ jobs:
         cache: gradle
 
     - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-      continue-on-error: true
+      run: |
+        if [ -f "./gradlew" ]; then
+          chmod +x gradlew
+        else
+          echo "Gradle wrapper not found, skipping chmod."
+        fi
 
     - name: Build Debug APK
       run: |
